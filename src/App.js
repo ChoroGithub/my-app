@@ -1,19 +1,30 @@
 import './App.css';
 import React, {useState} from "react";
-import firebase from 'firebase/app';
+import { initializeApp } from "firebase/app";
+// firebase.initializeApp({
 
-firebase.initializeApp({
+// // Your web app's Firebase configuration
 
+//   apiKey: "AIzaSyCBqOd2nDaDhTEDuUxiBwahWw0SjkuW7_I",
+//   authDomain: "ringkernspeicher.firebaseapp.com",
+//   projectId: "ringkernspeicher",
+//   storageBucket: "ringkernspeicher.appspot.com",
+//   messagingSenderId: "689786501639",
+//   appId: "1:689786501639:web:305f7bc2677798f67388a2"
+
+// })
 // Your web app's Firebase configuration
-
+const firebaseConfig = {
   apiKey: "AIzaSyCBqOd2nDaDhTEDuUxiBwahWw0SjkuW7_I",
   authDomain: "ringkernspeicher.firebaseapp.com",
   projectId: "ringkernspeicher",
   storageBucket: "ringkernspeicher.appspot.com",
   messagingSenderId: "689786501639",
   appId: "1:689786501639:web:305f7bc2677798f67388a2"
+};
 
-})
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 let i = 0;
 let j = 0;
 
