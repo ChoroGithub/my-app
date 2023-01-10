@@ -30,43 +30,90 @@ code {
   background-color: black;
   border-radius: 100%;
 }
-.circleR {
+/*green line*/
+.lineOV {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   width: 2%;
   height: 100%;
-  background-color: red;
-
-  /* position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border-radius: 100%;
-  z-index: 999; */
+  background-color: green;
 }
 
-.circleR1 {
+
+
+
+
+
+
+
+
+.long-arrow-left{
+  margin: auto;
+  position: absolute;
+  top: 35%; left: 45%;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid orange;
+  border-left: 5px solid orange;
+}
+
+.long-arrow-left{
+ transform: rotate(-45deg) translate(-30%, -40%);
+}
+
+.long-arrow-left::after{
+  margin:auto;
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 200%;
+  background-color: orange;
+  transform: rotate(-45deg) translate(220%, -10%);
+  
+}
+
+
+
+
+
+
+.long-arrow-up{
+  margin: auto;
+  position: absolute;
+  top: 25%; left: 45%;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid green;
+  border-left: 2px solid green;
+}
+
+.long-arrow-up{
+ transform: rotate(45deg) translate(-80%, -50%);
+}
+
+.long-arrow-up::after{
+  margin:auto;
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 380%;
+  background-color: green;
+  transform: rotate(-45deg) translate(920%, 3%);
+  
+}
+
+/*orange line*/
+.lineR {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 2%;
-  height: 50%;
-  background-color: red;
-
-  /* position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border-radius: 100%;
-  z-index: 999; */
+  width: 50%;
+  height: 4%;
+  background-color: orange;
 }
 
-.circleRInv {
+.lineRInv {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -87,6 +134,154 @@ code {
   border-radius: 100%;
 }
 
+.circleR11 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR12 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR13 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR14 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR21 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR22 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR23 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.circleR24 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.circleR31 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.circleR32 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR33 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR34 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.circleR41 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR42 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR43 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
+.circleR44 {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+}
 .circleBInv {
   position: absolute;
   top: 50%; left: 50%;
@@ -98,17 +293,74 @@ code {
   visibility:hidden
 }
 
+.globalContainer {
+  display: grid;
+  
+  grid-template-rows: 10px 200px 90%;
+  grid-template-columns: 5px 60px;
+  margin: auto;
+  min-height: auto;
+  grid-row-gap: 10px;  /* add a 10px gap between the rows */
+  grid-column-gap: 10px;
+}
 
+.buttonContainer {
+  display: grid;
+  
+  grid-template-columns: 30% 30% 30%;
+  
+  margin-bottom: 20px;
+}
+
+.active {
+  display: grid;
+  position: relative;
+  min-width: 200px;
+}
 
 .App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  position: relative;
+  margin-top: 20px;
+  
+}
+
+.XAxis {
   font-family: sans-serif;
   text-align: center;
   display: grid;
   /*grid-template-rows:  ;*/
   grid-template-columns: 60px 60px 60px 60px;
   position: absolute;
+  position: relative;
+  margin-left: 45px;
+  margin-bottom: 20px;
+}
+.YAxis {
+  display: grid;
+  grid-template-columns: 6px;
+  grid-template-rows: 50px 50px 50px 50px;
+  min-height: auto;
+  margin-top: 25px;
+}
+.placeholder {
+  display: grid;
 }
 
+
+
+
+
+
+.buttonA {
+  display: grid;
+  position: relative;
+  
+  
+}
 /* .AppH {
   font-family: sans-serif;
   text-align: center;
@@ -135,7 +387,17 @@ code {
   margin-top: 100px;
 }
 
-.lineH {
+.buttonA {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  
+  float: right; /* Float the button to the right */
+  clear: both; /* Clear previous floats */
+}
+
+/* .lineH {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(0%, -50%);
@@ -161,9 +423,9 @@ code {
   width: 10%;
   height: 2%;
   background-color: darkblue;
-}
+} */
 
-.line {
+/* .line {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, 0%);
@@ -192,8 +454,330 @@ code {
   transform: translateX(-50%) rotate(45deg) ;
   
   background-color: skyblue;
+} */
+
+
+@media (min-height: 359px) and (min-width: 340px) {
+
+  
+  .activeContainer {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-column-gap: 10px;
+    margin-top: 120px;
+    margin-left: 20px;
+  }
+
+  
+
+  .buttonContainer {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 30% 30%;
+    
+    margin-bottom: 20px;
+  }
+  .button {
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    margin-left: 40px;
+    margin-top: 100px;
+    width: 110px;
+    
+  }
+
+  /*green line*/
+  .lineOV {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7%;
+    height: 100%;
+    background-color: green;
+  }
+
+  .lineR {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170%;
+    height: 4%;
+    background-color: orange;
+  }
+
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+    display: grid;
+    /*grid-template-rows:  ;*/
+    grid-template-columns: 60px 60px 60px 60px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .YAxis {
+    display: grid;
+    grid-template-columns: 6px;
+    grid-template-rows: 68px 68px 69px 50px;
+    min-height: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .long-arrow-up{
+    margin: auto;
+    position: absolute;
+    top: 25%; 
+    left: 45%;
+    width: 25px;
+    height: 32px;
+    border-top: 2px solid green;
+    border-left: 2px solid green;
+  }
+
+  .long-arrow-up{
+  transform: rotate(45deg) translate(-84%, -10%);
+  }
+
+  .long-arrow-up::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 380%;
+    background-color: green;
+    transform: rotate(-45deg) translate(1300%, 5%);
+    
+  }
+
+
+  .long-arrow-left{
+    
+    
+    position: absolute;
+    top: 47%; 
+    left: 25%;
+    width: 23px;
+    border-top: 3px solid orange;
+    border-left: 3px solid orange;
+  }
+  
+  .long-arrow-left{
+    
+   transform: rotate(-45deg) translate(-2%, -60%);
+  }
+  
+  .long-arrow-left::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 16px;
+    height: 60px;
+    background-color: orange;
+    
+  }
+
+}
+
+@media (min-width: 992px) {
+  /*orange line*/
+  .lineR {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 4%;
+    background-color: orange;
+  }
+    /*green line*/
+  .lineOV {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2%;
+    height: 100%;
+    background-color: green;
+  }
+  .activeContainer {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    margin-top: 500px;
+  }
+
+  .YAxis {
+    display: grid;
+    grid-template-columns: 6px;
+    grid-template-rows: 110px 110px 110px 80px;
+    min-height: auto;
+    margin-top: 60px;
+  }
+
+  .XAxis {
+    font-family: sans-serif;
+    text-align: center;
+    display: grid;
+    /*grid-template-rows:  ;*/
+    grid-template-columns: 60px 60px 60px 60px;
+    position: absolute;
+    position: relative;
+    margin-left: 65px;
+    margin-bottom: 20px;
+  }
+
+
+  .long-arrow-left{
+    margin: auto;
+    position: absolute;
+    top: 51%; 
+    left: 45%;
+    
+    border-top: 5px solid orange;
+    border-left: 5px solid orange;
+  }
+  
+  .long-arrow-left{
+    
+   transform: rotate(-45deg) translate(10%, -60%);
+  }
+  
+  .long-arrow-left::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    
+    background-color: orange;
+  }
+
+
+
+
+  .long-arrow-up{
+    margin: auto;
+    position: absolute;
+    top: 25%; left: 45%;
+    width: 25px;
+    height: 32px;
+    border-top: 2px solid green;
+    border-left: 2px solid green;
+  }
+  
+  .long-arrow-up{
+   transform: rotate(45deg) translate(-59%, -10%);
+  }
+  
+  .long-arrow-up::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 380%;
+    background-color: green;
+    transform: rotate(-45deg) translate(1300%, 5%);
+    
+  }
+
 }
 
 
+@media (min-width: 1200px) {
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+    display: grid;
+    /*grid-template-rows:  ;*/
+    grid-template-columns: 60px 60px 60px 60px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: -1px;
+  }
 
+  /*orange line*/
+  .lineR {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 4%;
+    background-color: orange;
+  }
+    /*green line*/
+  .lineOV {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.8%;
+    height: 100%;
+    background-color: green;
+  }
+  .activeContainer {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    margin-top: 120px;
+  }
+
+  .YAxis {
+    display: grid;
+    grid-template-columns: 6px;
+    grid-template-rows: 84px 80px 80px 80px;
+    min-height: auto;
+    margin-top: 50px;
+  }
+
+  .long-arrow-up{
+    margin: auto;
+    position: absolute;
+    top: 25%; 
+    left: 49%;
+    width: 25px;
+    height: 32px;
+    border-top: 2px solid green;
+    border-left: 2px solid green;
+  }
+
+  .long-arrow-up{
+  transform: rotate(45deg) translate(-84%, -10%);
+  }
+
+  .long-arrow-up::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 380%;
+    background-color: green;
+    transform: rotate(-45deg) translate(1300%, 5%);
+    
+  }
+
+
+  .long-arrow-left{
+    position: absolute;
+    top: 47%; 
+    left: 35%;
+    width: 23px;
+    border-top: 3px solid orange;
+    border-left: 3px solid orange;
+  }
+  
+  .long-arrow-left{
+    
+   transform: rotate(-45deg) translate(-2%, -60%);
+  }
+  
+  .long-arrow-left::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 16px;
+    height: 60px;
+    background-color: orange;
+    
+  }
+
+}
 
