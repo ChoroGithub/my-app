@@ -684,6 +684,7 @@ code {
 
 
 @media (min-width: 1200px) {
+
   .App {
     font-family: sans-serif;
     text-align: center;
@@ -692,13 +693,35 @@ code {
     grid-template-columns: 60px 60px 60px 60px;
     position: relative;
     margin-top: 20px;
-    margin-left: -1px;
+    margin-left: 1px;
   }
+
+  .YAxis {
+    display: grid;
+    grid-template-columns: 6px;
+    grid-template-rows: 107px 107px 107px 50px;
+    min-height: auto;
+    margin-top: 64px;
+    margin-left: 20px;
+  }
+  .globalContainer {
+    display: grid;
+    
+    grid-template-rows: 10px 200px 90%;
+    grid-template-columns: 5px 60px;
+    margin: auto;
+    min-height: auto;
+    grid-row-gap: 10px;  /* add a 10px gap between the rows */
+    grid-column-gap: 10px;
+    height: 350px;
+  }
+
 
   /*orange line*/
   .lineR {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
     height: 4%;
@@ -719,19 +742,13 @@ code {
     margin-top: 120px;
   }
 
-  .YAxis {
-    display: grid;
-    grid-template-columns: 6px;
-    grid-template-rows: 84px 80px 80px 80px;
-    min-height: auto;
-    margin-top: 50px;
-  }
+
 
   .long-arrow-up{
     margin: auto;
     position: absolute;
     top: 25%; 
-    left: 49%;
+    left: 48.6%;
     width: 25px;
     height: 32px;
     border-top: 2px solid green;
@@ -756,9 +773,9 @@ code {
 
   .long-arrow-left{
     position: absolute;
-    top: 47%; 
+    top: 48%; 
     left: 35%;
-    width: 23px;
+    width: 26px;
     border-top: 3px solid orange;
     border-left: 3px solid orange;
   }

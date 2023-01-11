@@ -394,32 +394,32 @@ const App = () => {
         <div className="XAxis">
           
           <div>
-            x1
+            x<sub>1</sub>
           </div>
           <div>
-            x2
+            x<sub>2</sub>
           </div>
           <div>
-            x3
+            x<sub>3</sub>
           </div>
           <div>
-            x4
+            x<sub>4</sub>
           </div>
           
         </div>
         
         <div className='YAxis'>
           <div>
-            y1
+            y<sub>1</sub>
           </div>
           <div>
-            y2
+            y<sub>2</sub>
           </div>
           <div>
-            y3
+            y<sub>3</sub>
           </div>
           <div>
-            y4
+            y<sub>4</sub>
           </div>
         </div>
 
@@ -551,7 +551,7 @@ const App = () => {
       </div>
       <div className='activeContainer'>
         <div className='active'>
-          <h1>Activ: x{nameX}y{nameY}</h1>
+          <h1>Activ: x<sub>{nameX}</sub>y<sub>{nameY}</sub></h1>
         </div>
         <div className="buttonAH">
           <button className="buttonA" onClick={changeStyleCyrB}>
