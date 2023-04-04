@@ -21,15 +21,7 @@ code {
   -moz-transform: scale(0.9); */
 }
 
-.circle {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  background-color: black;
-  border-radius: 100%;
-}
+
 /*green line*/
 .lineOV {
   position: absolute;
@@ -124,6 +116,16 @@ code {
   visibility:hidden
 }
 
+.circle {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
 .circleB {
   position: absolute;
   top: 50%; left: 50%;
@@ -140,8 +142,9 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
+  
 }
 .circleR12 {
   position: absolute;
@@ -149,8 +152,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR13 {
   position: absolute;
@@ -158,8 +161,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR14 {
   position: absolute;
@@ -167,8 +170,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR21 {
   position: absolute;
@@ -176,8 +179,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR22 {
   position: absolute;
@@ -185,8 +188,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR23 {
   position: absolute;
@@ -194,8 +197,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 
 .circleR24 {
@@ -204,8 +207,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 
 .circleR31 {
@@ -214,8 +217,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 
 .circleR32 {
@@ -224,8 +227,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR33 {
   position: absolute;
@@ -233,8 +236,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR34 {
   position: absolute;
@@ -242,8 +245,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 
 .circleR41 {
@@ -252,8 +255,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR42 {
   position: absolute;
@@ -261,8 +264,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR43 {
   position: absolute;
@@ -270,8 +273,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleR44 {
   position: absolute;
@@ -279,8 +282,8 @@ code {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
-  background-color: red;
-  border-radius: 100%;
+  border: 5px solid red;
+  border-radius: 50%;
 }
 .circleBInv {
   position: absolute;
@@ -464,7 +467,7 @@ code {
     display: grid;
     grid-template-columns: 50% 30%;
     grid-column-gap: 10px;
-    margin-top: 120px;
+    margin-top: 220px;
     margin-left: 20px;
   }
 
@@ -521,9 +524,9 @@ code {
   .YAxis {
     display: grid;
     grid-template-columns: 6px;
-    grid-template-rows: 68px 68px 69px 50px;
+    grid-template-rows: 90px 96px 90px 50px;
     min-height: auto;
-    margin-top: 40px;
+    margin-top: 55px;
     margin-left: 20px;
   }
 
@@ -589,7 +592,7 @@ code {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 70%;
     height: 4%;
     background-color: orange;
   }
@@ -602,6 +605,26 @@ code {
     height: 100%;
     background-color: green;
   }
+
+  .lineH {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-10%, -50%);
+    width: 190%;
+    height: 4%;
+    background-color: gray;
+  }
+
+  .lineV {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1.8%;
+    height: 330%;
+    background-color: gray;
+  }
+
   .activeContainer {
     display: grid;
     grid-template-columns: 30% 30%;
@@ -611,7 +634,7 @@ code {
   .YAxis {
     display: grid;
     grid-template-columns: 6px;
-    grid-template-rows: 110px 110px 110px 80px;
+    grid-template-rows: 89px 89px 100px 80px;
     min-height: auto;
     margin-top: 60px;
   }
@@ -699,11 +722,24 @@ code {
   .YAxis {
     display: grid;
     grid-template-columns: 6px;
-    grid-template-rows: 107px 107px 107px 50px;
+    grid-template-rows: 93px 93px 95px 50px;
     min-height: auto;
-    margin-top: 64px;
+    margin-top: 55px;
     margin-left: 20px;
   }
+
+  .XAxis {
+    font-family: sans-serif;
+    text-align: center;
+    display: grid;
+    /*grid-template-rows:  ;*/
+    grid-template-columns: 60px 60px 60px 60px;
+    position: absolute;
+    position: relative;
+    margin-left: 39px;
+    margin-bottom: 20px;
+  }
+
   .globalContainer {
     display: grid;
     
@@ -727,6 +763,26 @@ code {
     height: 4%;
     background-color: orange;
   }
+
+  .lineH {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-10%, -50%);
+    width: 170%;
+    height: 4%;
+    background-color: gray;
+  }
+
+  .lineV {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -7%);
+    width: 1.8%;
+    height: 360%;
+    background-color: gray;
+  }
+
     /*green line*/
   .lineOV {
     position: absolute;

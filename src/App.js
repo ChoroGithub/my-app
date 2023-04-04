@@ -426,13 +426,17 @@ const App = () => {
         <div className="App">
         
           <div className="container">
+            <div className='lineH'></div>
+            <div className='lineV'></div>
             <div className="circle"></div>
             <div className={lineGHA}></div>
             <div className={circleB}></div>
             <div className={lineOVA}></div>
             <div className={circleR11}></div>
+            
           </div>
           <div className="container"> 
+            <div className='lineV'></div>
             <div className="circle"></div>
             <div className={lineGH}></div>
             <div className={lineOVA2}></div>
@@ -440,6 +444,7 @@ const App = () => {
             <div className={circleR12}></div>
           </div>
           <div className="container">
+            <div className='lineV'></div>
             <div className="circle"></div>
             <div className={lineGH}></div>
             <div className={circleB}></div>
@@ -447,6 +452,7 @@ const App = () => {
             <div className={circleR13}></div>
           </div>
           <div className="container">
+            <div className='lineV'></div>
             <div className="circle"></div>
             <div className={lineGH}></div>
             <div className={circleB}></div>
@@ -455,6 +461,7 @@ const App = () => {
           </div>
 
           <div className="container">
+            <div className='lineH'></div>
             <div className="circle"></div>
             <div className={lineGHA2}></div>
             <div className={circleB}></div>
@@ -484,6 +491,7 @@ const App = () => {
           </div>
 
           <div className="container">
+            <div className='lineH'></div>
             <div className="circle"></div>
             <div className={lineGHA3}></div>
             <div className={circleB}></div>
@@ -513,6 +521,7 @@ const App = () => {
           </div>
 
           <div className="container">
+            <div className='lineH'></div>
             <div className="circle"></div>
             <div className={lineGHA4}></div>
             <div className={circleB}></div>
