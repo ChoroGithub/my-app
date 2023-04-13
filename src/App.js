@@ -30,7 +30,7 @@ let j = 0;
 
 
 const App = () => {
-
+  const [coordinates, setPairList] = useState([]);
   //hor lines
   const [lineGH, setStyleLineGH] = useState("lineRInv");
   const [lineGHA, setStyleLineGHA] = useState("lineRInv");
@@ -52,6 +52,29 @@ const App = () => {
   const [lineOV4, setStyleLine4OV] = useState("lineRInv");
   const [lineOVA4, setStyleLineOVA4] = useState("lineRInv1");
 
+
+    //hor lines temp
+    const [lineGHT, setStyleLineGHT] = useState("lineRInv");
+    const [lineGHAT, setStyleLineGHAT] = useState("lineRInv");
+    const [lineGH2T, setStyleLine2GHT] = useState("lineRInv");
+    const [lineGHA2T, setStyleLineGHA2T] = useState("lineRInv");
+    const [lineGH3T, setStyleLine3GHT] = useState("lineRInv");
+    const [lineGHA3T, setStyleLineGHA3T] = useState("lineRInv");
+    const [lineGH4T, setStyleLine4GHT] = useState("lineRInv");
+    const [lineGHA4T, setStyleLineGHA4T] = useState("lineRInv");
+  
+  
+    //vert lines temp
+    const [lineOVT, setStyleLineOVT] = useState("lineRInv1");
+    const [lineOVAT, setStyleLineOVAT] = useState("lineRInv1");
+    const [lineOV2T, setStyleLine2OVT] = useState("lineRInv");
+    const [lineOVA2T, setStyleLineOVA2T] = useState("lineRInv1");
+    const [lineOV3T, setStyleLine3OVT] = useState("lineRInv");
+    const [lineOVA3T, setStyleLineOVA3T] = useState("lineRInv1");
+    const [lineOV4T, setStyleLine4OVT] = useState("lineRInv");
+    const [lineOVA4T, setStyleLineOVA4T] = useState("lineRInv1");
+
+    
   //circles
   const [circleB, setStyleCyrB] = useState("circleBInv");
   const [circleR11, setStyle11] = useState("circleBInv");
@@ -71,7 +94,7 @@ const App = () => {
   const [circleR43, setStyle43] = useState("circleBInv");
   const [circleR44, setStyle44] = useState("circleBInv");
 
-
+//todo: change to save coordinates
   //x,y
   const [nameX, setNameX] = useState(0);
   const [nameY, setNameY] = useState(0);
@@ -79,6 +102,7 @@ const App = () => {
 
   let x = [1,2,3,4];
   let y = [1,2,3,4];
+  //todo: call in clear button and delete coordinates
   function resetStyle() {
     setStyle11("circleBInv");
     setStyle12("circleBInv");
@@ -96,6 +120,8 @@ const App = () => {
     setStyle42("circleBInv");
     setStyle43("circleBInv");
     setStyle44("circleBInv");
+
+    setPairList([]);
   }
   //set circle at crossings
   var at = {
@@ -295,8 +321,8 @@ const App = () => {
       }
     }
     setNameX(i);
-    resetStyle();
-    at['at_' + i + j]();
+    //resetStyle();
+    //at['at_' + i + j]();
   };
 
   //vertical
@@ -355,18 +381,165 @@ const App = () => {
       }
     }
     setNameY(j);
-    resetStyle();
-    at['at_' + i + j]();
+    //resetStyle();
+    //at['at_' + i + j]();
   };
 
   const changeStyleCyrB = () => {
+    //activate flow
+    // if(circleB === "circleBInv"){
+    //   setStyleCyrB("circleB");
+    // }
+    // else {
+    //   setStyleCyrB("circleBInv")
+    // }
+
+    //hor temp
+    if(i === x.length) {
+      console.log("if")
+      
+      
+      setStyleLineGHT("lineRT");
+      setStyleLineGHAT("long-arrow-leftt")
+      setStyleLine2GHT("lineRInv");
+      setStyleLineGHA2T("lineRInv");
+      setStyleLine3GHT("lineRInv");
+      setStyleLineGHA3T("lineRInv");
+      setStyleLine4GHT("lineRInv");
+      setStyleLineGHA4T("lineRInv");
+    } else {
+      
+      if(i===1){
+        //setStyleLineGH("lineR")
+        
+        setStyleLineGHT("lineRT");
+        setStyleLineGHAT("long-arrow-leftt")
+        setStyleLine2GHT("lineRInv");
+        setStyleLineGHA2T("lineRInv");
+        setStyleLine3GHT("lineRInv");
+        setStyleLineGHA3T("lineRInv");
+        setStyleLine4GHT("lineRInv");
+        setStyleLineGHA4T("lineRInv");
+      }
+      else if(i===2) {
+        
+        setStyleLineGHT("lineRInv");
+        setStyleLineGHAT("lineRInv");
+        setStyleLine2GHT("lineRT");
+        setStyleLineGHA2T("long-arrow-leftt");
+        setStyleLine3GHT("lineRInv");
+        setStyleLineGHA3T("lineRInv");
+        setStyleLine4GHT("lineRInv");
+        setStyleLineGHA4T("lineRInv");
+      } else if (i===3) {
+        setStyleLineGHT("lineRInv")
+        setStyleLineGHAT("lineRInv")
+        setStyleLine2GHT("lineRInv");
+        setStyleLineGHA2T("lineRInv")
+        setStyleLine3GHT("lineRT");
+        setStyleLineGHA3T("long-arrow-leftt")
+        setStyleLine4GHT("lineRInv");
+        setStyleLineGHA4T("lineRInv")
+
+      } else if (i===4) {
+        setStyleLineGHT("lineRInv")
+        setStyleLineGHAT("lineRInv")
+        setStyleLine2GHT("lineRInv");
+        setStyleLineGHA2T("lineRInv");
+        setStyleLine3GHT("lineRInv");
+        setStyleLineGHA3T("lineRInv");
+        setStyleLine4GHT("lineRT");
+        setStyleLineGHA4T("long-arrow-leftt");
+      }
+    }
+
+    //vert temp 
+    if(j === y.length) {
+      
+      setStyleLineOVT("lineOVT");
+      setStyleLineOVAT("long-arrow-upt");
+      setStyleLine2OVT("lineRInv1");
+      setStyleLineOVA2T("lineRInv1");
+      setStyleLine3OVT("lineRInv1");
+      setStyleLineOVA3T("lineRInv1");
+      setStyleLine4OVT("lineRInv1");
+      setStyleLineOVA4T("lineRInv1");
+    } else {
+      
+      if(j===1) {
+        setStyleLineOVT("lineOVT");
+        setStyleLineOVAT("long-arrow-upt");
+        setStyleLine2OVT("lineRInv1");
+        setStyleLineOVA2T("lineRInv1");
+        setStyleLine3OVT("lineRInv1");
+        setStyleLineOVA3T("lineRInv1");
+        setStyleLine4OVT("lineRInv1");
+        setStyleLineOVA4T("lineRInv1");
+      }
+      else if(j===2) {
+        setStyleLineOVT("lineRInv1");
+        setStyleLineOVAT("lineRInv1");
+        setStyleLine2OVT("lineOVT");
+        setStyleLineOVA2T("long-arrow-upt");
+        setStyleLine3OVT("lineRInv1");
+        setStyleLineOVA3T("lineRInv1");
+        setStyleLine4OVT("lineRInv1");
+        setStyleLineOVA4T("lineRInv1");
+      } else if (j===3) {
+        setStyleLineOVT("lineRInv1");
+        setStyleLineOVAT("lineRInv1");
+        setStyleLine2OVT("lineRInv1");
+        setStyleLineOVA2T("lineRInv1");
+        setStyleLine3OVT("lineOVT");
+        setStyleLineOVA3T("long-arrow-upt");
+        setStyleLine4OVT("lineRInv1");
+        setStyleLineOVA4T("lineRInv1");
+
+      } else if (j===4) {
+        setStyleLineOVT("lineRInv1");
+        setStyleLineOVAT("lineRInv1");
+        setStyleLine2OVT("lineRInv1");
+        setStyleLineOVA2T("lineRInv1");
+        setStyleLine3OVT("lineRInv1");
+        setStyleLineOVA3T("lineRInv1");
+        setStyleLine4OVT("lineOVT");
+        setStyleLineOVA4T("long-arrow-upt");
+      }
+    }
+
+    setTimeout(() => {
+      setStyleLineOVT("lineRInv1");
+      setStyleLineOVAT("lineRInv1");
+      setStyleLine2OVT("lineRInv1");
+      setStyleLineOVA2T("lineRInv1");
+      setStyleLine3OVT("lineRInv1");
+      setStyleLineOVA3T("lineRInv1");
+      setStyleLine4OVT("lineRInv1");
+      setStyleLineOVA4T("lineRInv1");
+
+      setStyleLineGHT("lineRInv")
+      setStyleLineGHAT("lineRInv")
+      setStyleLine2GHT("lineRInv");
+      setStyleLineGHA2T("lineRInv");
+      setStyleLine3GHT("lineRInv");
+      setStyleLineGHA3T("lineRInv");
+      setStyleLine4GHT("lineRInv");
+      setStyleLineGHA4T("lineRInv");
+      at['at_' + i + j]();
+      const isDuplicate = coordinates.some(pair => (pair[0] === i && pair[1] === j) || (pair[0] === j && pair[1] === i));
+      if (!isDuplicate) {
+        // If the pair is not already in the list, add it
+        setPairList([...coordinates, [i, j]]);
+      }
+    },3000)
+
+
+    // setNameY(j);
+
+    // setNameX(i);
     
-    if(circleB === "circleBInv"){
-      setStyleCyrB("circleB");
-    }
-    else {
-      setStyleCyrB("circleBInv")
-    }
+    
+    
     
   };
 
@@ -375,11 +548,11 @@ const App = () => {
     <>
       <div className='buttonContainer'>
         <button className="button" onClick={changeStyleLineGH}>
-          Change Horizontal
+          Select Horizontal
         </button>
 
         <button className="button" onClick={changeStyleLineOV}>
-          Change Vertical
+          Select Vertical
         </button>
 
         
@@ -433,7 +606,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOVA}></div>
             <div className={circleR11}></div>
-            
+            <div className={lineGHAT}></div>
+            <div className={lineOVAT}></div>
           </div>
           <div className="container"> 
             <div className='lineV'></div>
@@ -442,6 +616,8 @@ const App = () => {
             <div className={lineOVA2}></div>
             <div className={circleB}></div>
             <div className={circleR12}></div>
+            <div className={lineGHT}></div>
+            <div className={lineOVA2T}></div>
           </div>
           <div className="container">
             <div className='lineV'></div>
@@ -450,6 +626,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOVA3}></div>
             <div className={circleR13}></div>
+            <div className={lineGHT}></div>
+            <div className={lineOVA3T}></div>
           </div>
           <div className="container">
             <div className='lineV'></div>
@@ -458,6 +636,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOVA4}></div>
             <div className={circleR14}></div>
+            <div className={lineGHT}></div>
+            <div className={lineOVA4T}></div>
           </div>
 
           <div className="container">
@@ -467,6 +647,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV}></div>
             <div className={circleR21}></div>
+            <div className={lineGHA2T}></div>
+            <div className={lineOVT}></div>
           </div>
           <div className="container">
             <div className="circle"></div>
@@ -474,6 +656,8 @@ const App = () => {
             <div className={lineOV2}></div>
             <div className={circleB}></div>
             <div className={circleR22}></div>
+            <div className={lineGH2T}></div>
+            <div className={lineOV2T}></div>
           </div>
           <div className="container">
             <div className="circle"></div>
@@ -481,6 +665,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV3}></div>
             <div className={circleR23}></div>
+            <div className={lineGH2T}></div>
+            <div className={lineOV3T}></div>
           </div>
           <div className="container">
             <div className="circle"></div>
@@ -488,6 +674,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV4}></div>
             <div className={circleR24}></div>
+            <div className={lineGH2T}></div>
+            <div className={lineOV4T}></div>
           </div>
 
           <div className="container">
@@ -497,6 +685,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV}></div>
             <div className={circleR31}></div>
+            <div className={lineGHA3T}></div>
+            <div className={lineOVT}></div>
           </div>
           <div className="container"> 
             <div className="circle"></div>
@@ -504,6 +694,8 @@ const App = () => {
             <div className={lineOV2}></div>
             <div className={circleB}></div>
             <div className={circleR32}></div>
+            <div className={lineGH3T}></div>
+            <div className={lineOV2T}></div>
           </div>
           <div className="container">
             <div className="circle"></div>
@@ -511,6 +703,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV3}></div>
             <div className={circleR33}></div>
+            <div className={lineGH3T}></div>
+            <div className={lineOV3T}></div>
           </div>
           <div className="container">
             <div className="circle"></div>
@@ -518,6 +712,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV4}></div>
             <div className={circleR34}></div>
+            <div className={lineGH3T}></div>
+            <div className={lineOV4T}></div>
           </div>
 
           <div className="container">
@@ -527,6 +723,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV}></div>
             <div className={circleR41}></div>
+            <div className={lineGHA4T}></div>
+            <div className={lineOVT}></div>
           </div>
           <div className="container"> 
             <div className="circle"></div>
@@ -534,6 +732,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV2}></div>
             <div className={circleR42}></div>
+            <div className={lineGH4T}></div>
+            <div className={lineOV2T}></div>
           </div>
           <div className="container">
             <div className="circle"></div>
@@ -541,6 +741,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV3}></div>
             <div className={circleR43}></div>
+            <div className={lineGH4T}></div>
+            <div className={lineOV3T}></div>
           </div>
           <div className="container">
             <div className="circle"></div>
@@ -548,6 +750,8 @@ const App = () => {
             <div className={circleB}></div>
             <div className={lineOV4}></div>
             <div className={circleR44}></div>
+            <div className={lineGH4T}></div>
+            <div className={lineOV4T}></div>
           </div>
         
         </div>
@@ -560,11 +764,22 @@ const App = () => {
       </div>
       <div className='activeContainer'>
         <div className='active'>
-          <h1>Activ: x<sub>{nameX}</sub>y<sub>{nameY}</sub></h1>
+          <ul>
+            {coordinates.map((pair, index) => (
+              <li key={index}>
+                Active x<sub>{pair[0]}</sub>y<sub>{pair[1]}</sub>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="buttonAH">
           <button className="buttonA" onClick={changeStyleCyrB}>
-            Activate All
+            Activate
+          </button>
+        </div>
+        <div className="buttonAH">
+          <button className="buttonA" onClick={resetStyle}>
+            Clear
           </button>
         </div>
       </div>

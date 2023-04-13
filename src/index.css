@@ -461,13 +461,31 @@ code {
 
 
 @media (min-height: 359px) and (min-width: 340px) {
+  .lineH {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-10%, -50%);
+    width: 650%;
+    height: 3%;
+    background-color: gray;
+  }
 
+  .lineV {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 5%;
+    height: 350%;
+    background-color: gray;
+  }
   
   .activeContainer {
     display: grid;
     grid-template-columns: 50% 30%;
     grid-column-gap: 10px;
-    margin-top: 220px;
+    margin-top: 250px;
     margin-left: 20px;
   }
 
@@ -494,19 +512,37 @@ code {
   /*green line*/
   .lineOV {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 1%; left: 50%;
     transform: translate(-50%, -50%);
     width: 7%;
-    height: 100%;
+    height: 190%;
+    background-color: green;
+  }
+  .lineOVT {
+    position: absolute;
+    top: 1%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29%;
+    height: 190%;
     background-color: green;
   }
 
   .lineR {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%; 
+    left: -2%;
     transform: translate(-50%, -50%);
-    width: 170%;
-    height: 4%;
+    width: 370%;
+    height: 3%;
+    background-color: orange;
+  }
+  .lineRT {
+    position: absolute;
+    top: 50%; 
+    left: -1%;
+    transform: translate(-50%, -50%);
+    width: 370%;
+    height: 9%;
     background-color: orange;
   }
 
@@ -524,9 +560,9 @@ code {
   .YAxis {
     display: grid;
     grid-template-columns: 6px;
-    grid-template-rows: 90px 96px 90px 50px;
+    grid-template-rows: 110px 110px 110px 50px;
     min-height: auto;
-    margin-top: 55px;
+    margin-top: 65px;
     margin-left: 20px;
   }
 
@@ -550,9 +586,34 @@ code {
     content: "";
     position: absolute;
     width: 10%;
-    height: 380%;
     background-color: green;
-    transform: rotate(-45deg) translate(1300%, 5%);
+    visibility: hidden;
+    
+  }
+
+  .long-arrow-upt{
+    margin: auto;
+    position: absolute;
+    top: 25%; 
+    left: 45%;
+    width: 25px;
+    height: 32px;
+    border-top: 7px solid green;
+    border-left: 7px solid green;
+  }
+
+  .long-arrow-upt{
+  transform: rotate(45deg) translate(-84%, -10%);
+  }
+
+  .long-arrow-upt::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    width: 10%;
+
+    background-color: green;
+
     
   }
 
@@ -561,9 +622,10 @@ code {
     
     
     position: absolute;
-    top: 47%; 
-    left: 25%;
+    top: 48%; 
+    left: 20%;
     width: 23px;
+    height: 23px;
     border-top: 3px solid orange;
     border-left: 3px solid orange;
   }
@@ -579,10 +641,40 @@ code {
     position: absolute;
     top: -1px;
     left: 16px;
-    height: 60px;
+    
     background-color: orange;
+    visibility: hidden;
     
   }
+
+  .long-arrow-leftt{
+    
+    
+    position: absolute;
+    top: 48%; 
+    left: 20%;
+    width: 23px;
+    height: 23px;
+    border-top: 7px solid orange;
+    border-left: 7px solid orange;
+  }
+  
+  .long-arrow-leftt{
+    
+   transform: rotate(-45deg) translate(-2%, -60%);
+  }
+  
+  .long-arrow-leftt::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 16px;
+    background-color: orange;
+    visibility: hidden;
+    
+  }
+
 
 }
 
@@ -590,19 +682,39 @@ code {
   /*orange line*/
   .lineR {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%; 
+    left: 5%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 130%;
+    height: 2%;
+    background-color: orange;
+  }
+  .lineRT {
+    position: absolute;
+    top: 50%; 
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 130%;
     height: 4%;
     background-color: orange;
   }
     /*green line*/
   .lineOV {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 2%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 2%;
-    height: 100%;
+    height: 180%;
+    background-color: green;
+  }
+  .lineOVT {
+    position: absolute;
+    top: 2%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4%;
+    height: 180%;
     background-color: green;
   }
 
@@ -611,17 +723,18 @@ code {
     top: 50%; 
     left: 50%;
     transform: translate(-10%, -50%);
-    width: 190%;
-    height: 4%;
+    width: 221%;
+    height: 2%;
     background-color: gray;
   }
 
   .lineV {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 30%; 
+    left: 50%;
     transform: translate(-50%, 0%);
     width: 1.8%;
-    height: 330%;
+    height: 340%;
     background-color: gray;
   }
 
@@ -655,11 +768,12 @@ code {
   .long-arrow-left{
     margin: auto;
     position: absolute;
-    top: 51%; 
-    left: 45%;
-    
-    border-top: 5px solid orange;
-    border-left: 5px solid orange;
+    top: 50%; 
+    left: 12%;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid orange;
+    border-left: 2px solid orange;
   }
   
   .long-arrow-left{
@@ -673,17 +787,42 @@ code {
     position: absolute;
     
     background-color: orange;
+    visibility: hidden;
   }
 
 
-
+  .long-arrow-leftt{
+    margin: auto;
+    position: absolute;
+    top: 50%; 
+    left: 12%;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid orange;
+    border-left: 2px solid orange;
+  }
+  
+  .long-arrow-leftt{
+    
+   transform: rotate(-45deg) translate(10%, -60%);
+  }
+  
+  .long-arrow-leftt::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    
+    background-color: orange;
+    visibility: hidden;
+  }
 
   .long-arrow-up{
     margin: auto;
     position: absolute;
-    top: 25%; left: 45%;
+    top: 26%; 
+    left: 46%;
     width: 25px;
-    height: 32px;
+    height: 25px;
     border-top: 2px solid green;
     border-left: 2px solid green;
   }
@@ -700,6 +839,33 @@ code {
     height: 380%;
     background-color: green;
     transform: rotate(-45deg) translate(1300%, 5%);
+    visibility: hidden;
+    
+  }
+  .long-arrow-upt{
+    margin: auto;
+    position: absolute;
+    top: 26%; 
+    left: 46%;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid green;
+    border-left: 2px solid green;
+  }
+  
+  .long-arrow-upt{
+   transform: rotate(45deg) translate(-59%, -10%);
+  }
+  
+  .long-arrow-upt::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 380%;
+    background-color: green;
+    transform: rotate(-45deg) translate(1300%, 5%);
+    visibility: hidden;
     
   }
 
@@ -722,7 +888,7 @@ code {
   .YAxis {
     display: grid;
     grid-template-columns: 6px;
-    grid-template-rows: 93px 93px 95px 50px;
+    grid-template-rows: 112px 112px 110px 50px;
     min-height: auto;
     margin-top: 55px;
     margin-left: 20px;
@@ -736,7 +902,7 @@ code {
     grid-template-columns: 60px 60px 60px 60px;
     position: absolute;
     position: relative;
-    margin-left: 39px;
+    margin-left: 65px;
     margin-bottom: 20px;
   }
 
@@ -756,21 +922,32 @@ code {
   /*orange line*/
   .lineR {
     position: absolute;
-    top: 50%; 
-    left: 50%;
+    top: 49.98%; 
+    left: 35%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 4%;
+    width: 74%;
+    height: 3.3%;
     background-color: orange;
   }
+
+    /*orange line temp*/
+    .lineRT {
+      position: absolute;
+      top: 49.98%; 
+      left: 35%;
+      transform: translate(-50%, -50%);
+      width: 74%;
+      height: 7.3%;
+      background-color: orange;
+    }
 
   .lineH {
     position: absolute;
     top: 50%; 
     left: 50%;
     transform: translate(-10%, -50%);
-    width: 170%;
-    height: 4%;
+    width: 120%;
+    height: 3%;
     background-color: gray;
   }
 
@@ -786,12 +963,22 @@ code {
     /*green line*/
   .lineOV {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 1%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 1.8%;
-    height: 100%;
+    height: 190%;
     background-color: green;
   }
+    .lineOVT {
+      position: absolute;
+      top: 1%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 7.8%;
+      height: 190%;
+      background-color: green;
+    }
   .activeContainer {
     display: grid;
     grid-template-columns: 30% 30%;
@@ -803,9 +990,9 @@ code {
   .long-arrow-up{
     margin: auto;
     position: absolute;
-    top: 25%; 
-    left: 48.6%;
-    width: 25px;
+    top: 31%; 
+    left: 50.5%;
+    width: 32px;
     height: 32px;
     border-top: 2px solid green;
     border-left: 2px solid green;
@@ -823,17 +1010,49 @@ code {
     height: 380%;
     background-color: green;
     transform: rotate(-45deg) translate(1300%, 5%);
+    visibility: hidden;
+    
+  }
+
+  .long-arrow-upt{
+    margin: auto;
+    position: absolute;
+    top: 31%; 
+    left: 50.5%;
+    width: 32px;
+    height: 32px;
+    border-top: 8px solid green;
+    border-left: 8px solid green;
+  }
+
+  .long-arrow-upt{
+  transform: rotate(45deg) translate(-84%, -10%);
+  }
+
+  .long-arrow-upt::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 380%;
+    background-color: green;
+    transform: rotate(-45deg) translate(1300%, 5%);
+    visibility: hidden;
     
   }
 
 
+
   .long-arrow-left{
     position: absolute;
-    top: 48%; 
-    left: 35%;
+    /*overral margin top */
+    top: 47%; 
+    /*overral margin left */
+    left: 39%;
     width: 26px;
-    border-top: 3px solid orange;
-    border-left: 3px solid orange;
+    height: 26px;
+    border-top: 2px solid orange;
+    border-left: 2px solid orange;
   }
   
   .long-arrow-left{
@@ -845,12 +1064,37 @@ code {
     margin:auto;
     content: "";
     position: absolute;
-    top: -1px;
-    left: 16px;
-    height: 60px;
-    background-color: orange;
-    
+    top: 4px;
+    left: 25px;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
   }
 
+  .long-arrow-leftt{
+    position: absolute;
+    /*overral margin top */
+    top: 47%; 
+    /*overral margin left */
+    left: 39%;
+    width: 26px;
+    height: 26px;
+    border-top: 8px solid orange;
+    border-left: 8px solid orange;
+  }
+  
+  .long-arrow-leftt{
+    
+   transform: rotate(-45deg) translate(-2%, -60%);
+  }
+  
+  .long-arrow-leftt::after{
+    margin:auto;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+  }
 }
 
